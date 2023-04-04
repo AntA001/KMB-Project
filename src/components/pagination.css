@@ -1,0 +1,22 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.pagination li {
+	margin: 0 10px;
+}
+
+.pagination button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 5px 10px;
+}
+
+.pagination button:focus {
+	outline: none;
+	text-decoration: underline;
+}

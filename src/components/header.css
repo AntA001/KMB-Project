@@ -1,0 +1,107 @@
+/* Header */
+.header {
+	position: relative;
+	height: 20vh;
+	margin-bottom: 80px;
+}
+
+.profile-image {
+	position: absolute;
+	top: 80%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+	width: 150px;
+	height: 150px;
+	background-image: url("https://marketplace.canva.com/EAFEits4-uw/1/0/800w/canva-boy-cartoon-gamer-animated-twitch-profile-photo-r0bPCSjUqg0.jpg");
+	background-size: cover;
+	border: 5px solid #fff;
+	z-index: 2;
+}
+
+.profile-name {
+	position: absolute;
+	top: 62%;
+	left: 33%;
+	transform: translate(-50%, -50%);
+	color: rgb(0, 0, 0);
+	font-size: 1.8em;
+	font-weight: bold;
+	z-index: 2;
+}
+
+.background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://i.pinimg.com/originals/ac/f9/25/acf925e32ab1d8dc072ff4646bbfc067.jpg");
+	background-size: cover;
+	z-index: 1;
+}
+
+/* Top bar */
+.top-bar {
+	background-color: #254a75;
+	display: flex;
+	height: auto;
+	justify-content: flex-end;
+}
+
+.circle {
+	width: 35px;
+	height: 35px;
+	left: 0;
+	background-color: #157fc1;
+	margin: 12px;
+	border-radius: 50%;
+	border: 3.5px solid #c8c5c5;
+}
+
+.circle-inner {
+	display: table-cell;
+	color: white;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	height: 35px;
+	width: 35px;
+	font-size: 20px;
+}
+
+.greeting {
+	color: rgba(255, 255, 255, 0.535);
+	font-size: 1em;
+	margin-right: 10%;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+	.profile-image {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100px;
+		height: 100px;
+	}
+
+	.profile-name {
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 1.4em;
+	}
+	.profile-name {
+		top: 100%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.greeting {
+		display: none;
+	}
+
+	.circle {
+		margin: 10px;
+	}
+}
